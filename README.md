@@ -35,7 +35,7 @@ sonarqubeReporter: {
   encoding: 'utf-8',          // test files encoding
   outputFolder: 'reports',    // report destination
   legacyMode: false,          // report for Sonarqube < 6.2 (disabled)
-  reportName: (metadata) => { // report name callback, accepts also a string (reportName: 'report.xml') to generate a single file
+  reportName: (metadata) => { // report name callback
     /**
      * Report metadata array:
      * - metadata[0] = browser name
@@ -47,6 +47,14 @@ sonarqubeReporter: {
   }
 }
 ```
+
+If you are using a single browser, `reportName` accepts also.
+
+```typescript
+reportName: 'result.xml'
+```
+
+Note this way a single file is generated.
 
 **Activate `sonarqube` reporter**
 

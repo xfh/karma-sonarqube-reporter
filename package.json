@@ -24,7 +24,7 @@
     "clone-regexp": "^2.0.0",
     "glob": "^7.1.2",
     "js2xmlparser": "^4.0.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "winston": "^3.0.0"
   },
   "devDependencies": {
